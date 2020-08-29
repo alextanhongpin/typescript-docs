@@ -1,0 +1,23 @@
+{
+  "name": "typescript-doc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules/.bin/tsc --build",
+    "start:dev": "node_modules/.bin/nodemon",
+    "start": "npm run build && node build/index.js",
+    "doc": "node_modules/.bin/typedoc src"
+  },
+  "keywords": [],
+  "author": "alextanhongpin <alextan220990@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.6.2",
+    "nodemon": "^2.0.4",
+    "ts-node": "^9.0.0",
+    "typedoc": "^0.19.0",
+    "typescript": "^4.0.2"
+  }
+}
